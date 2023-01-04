@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge</title>
+    <link rel="icon" type="image/png" href="gm/img/favicon.png">
+    <link rel="stylesheet" href="bs/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="fa/fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!--Aquí inicia la barra donde se encuentra el logo, título y botón ingresar.-->
+    <nav class="navbar navbar-expand-lg sticky-top k-nav-bar">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-kiwi-bird k-main-logo"></i>
+            <span class="k-main-title">Knowledge</span>
+        </a>
+        <button class="navbar-toggler k-navbar-button" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <div class="navbar-nav mr-auto mt-2 mt-lg-0"></div>
+            <div class="my-2 my-lg-0" style="text-align: center;">
+                <button class="k-login-button" type="button" data-toggle="modal" data-target="#loginModal">Ingresar</button>
+            </div>
+        </div>
+    </nav>
+    <!--Aquí es donde inicia el carrusel y el formulario para crear una cuenta.-->
+    <div class="container-fluid k-section">
+        <div class="row">
+            <div class="col-md-7 k-section-column-carousel">
+                <!--Aquí es donde empieza el carrusel.-->
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="k-centered-text">
+                                <img class="img-fluid" src="gm/img/innovacion.png" alt="" width="128px" height="128px">
+                                <span class="k-carousel-title">¡Una nueva forma de aprender!</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="k-centered-text">
+                                <img class="img-fluid" src="gm/img/school-1.png" alt="" width="128px" height="128px">
+                                <span class="k-carousel-title">Knowledge fue creado en el ITMA II.</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="k-centered-text">
+                                <img class="img-fluid" src="gm/img/its-funny.png" alt="" width="128px" height="128px">
+                                <span class="k-carousel-title">¡Knowledge es divertido y fácil de usar!</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="k-centered-text">
+                                <img class="img-fluid" src="gm/img/school.png" alt="" width="128px" height="128px">
+                                <span class="k-carousel-title">"Conocimiento al alcance de un clic"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 k-section-column-form">
+                <!--Aquí inicia el formulario de registro para creación de cuenta.-->
+                <p class="k-section-column-form-title"><i class="fas fa-user-plus k-section-column-form-icon"></i>Crear una Cuenta</p>
+                
+                <form action="signin.php" method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputNames">Nombre(s)</label>
+                            <input class="form-control k-section-column-form-input" id="inputNames" type="text" name="newUserNames" placeholder="Ingrese nombre(s)">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputSurname">Apellido</label>
+                            <input class="form-control k-section-column-form-input" id="inputSurname" type="text" name="newUserFirstSurname" placeholder="Ingrese apellido">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Correo Electrónico</label>
+                        <input class="form-control k-section-column-form-input" id="inputEmail" type="email" name="newUserEmail" placeholder="Ingrese correo electrónico">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword">Contraseña</label>
+                            <input class="form-control k-section-column-form-input" id="inputPassword" type="password"  name="newUserPassword" placeholder="Ingrese contraseña">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPasswordAgain">Contraseña</label>
+                            <input class="form-control k-section-column-form-input" id="inputPasswordAgain" type="password"  name="newUserPasswordAgain" placeholder="Ingrese contraseña">
+                        </div>
+                    </div>
+                    <button class="k-section-column-form-button" type="submit">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Aquí inicia el pie de página.-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row k-footer-row-link">
+                <div class="col-md-3">
+                    <p class="k-footer-title">Proyecto</p>
+                    <ul class="k-footer-list">
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="donate.html"><i class="fas fa-hand-holding-usd k-footer-icon"></i>Donar</a></li>
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="participate.html"><i class="fas fa-people-carry k-footer-icon"></i>Participar</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="k-footer-title">Seguir</p>
+                    <ul class="k-footer-list">
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="https://es-la.facebook.com/"><i class="fab fa-facebook k-footer-icon"></i>Facebook</a></li>
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram k-footer-icon"></i>Instagram</a></li>
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="https://twitter.com/login?lang=es"><i class="fab fa-twitter k-footer-icon"></i>Twitter</a></li>
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="https://www.youtube.com/?hl=es-419&gl=MX"><i class="fab fa-youtube k-footer-icon"></i>Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                     <p class="k-footer-title">Comunidad</p>
+                    <ul class="k-footer-list">
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#commentsModal"><i class="fas fa-comment k-footer-icon"></i>Comentarios</a></li>
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#suggestionsModal"><i class="fas fa-smile-wink k-footer-icon"></i>Sugerencias</a></li>
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#complaintsModal"><i class="fas fa-angry k-footer-icon"></i>Quejas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                     <p class="k-footer-title">Ayuda</p>
+                    <ul class="k-footer-list">
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#aboutModal"><i class="fas fa-info-circle k-footer-icon"></i>Acerca de</a></li>
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#contactModal"><i class="fas fa-address-card k-footer-icon"></i>Contactar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row k-footer-row-info">
+                <div class="col-md-4 d-flex">
+                    <p>Hecho con mucho <i class="fas fa-heart"></i> en <i class="fas fa-home"></i>.</p>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <p>Creado y diseñado por Guillermo Jiménez.</p>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <p style="margin-right: 10px;">© JMG 2020.</p>
+                    <p><a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#termsModal">Términos</a> y <a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#privacityModal">Privacidad.</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Aquí es donde inician los modales.-->
+    <!--Aquí inicia el modal de iniciar sesión.-->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog k-modal-color-text">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel">Iniciar Sesión</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body k-modal-body-background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="login.php" method="post">
+                                    <div class="k-modal-user-icon-centered">
+                                        <i class="fas fa-user k-modal-user-icon"></i>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="userEmail"><i class="fas fa-at k-modal-margin-icon"></i>Correo Electrónico:</label>
+                                        <input class="form-control k-modal-input" id="userEmail" type="email" name="userEmail" placeholder="Ingrese correo electrónico">
+                                        <label for="userPassword"><i class="fas fa-key k-modal-margin-icon k-modal-margin-label"></i>Contraseña:</label>
+                                        <input class="form-control k-modal-input" id="userPassword" type="password" name="userPassword" placeholder="Ingrese contraseña">
+                                    </div>
+                                    <button class="k-modal-login-button" type="submit">Iniciar Sesión</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer k-modal-footer-background">
+                    <a class="k-modal-link k-link" href="index.html">¿No tiene una cuenta?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Aquí inicia el modal de comentarios.-->
+    <div class="modal fade" id="commentsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog k-modal-color-text">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel"><i class="fas fa-comment k-footer-icon"></i>Comentarios</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body k-modal-body-background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="inputUserEmailComment">Correo Electrónico</label>
+                                            <input class="form-control k-modal-comments-input" id="inputUserEmailComment" type="text" name="inputUserEmailComment" placeholder="Ingrese correo electrónico">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputUserNamesComment">Nombre(s)</label>
+                                            <input class="form-control k-modal-comments-input" id="inputUserNamesComment" type="text" name="inputUserNamesComment" placeholder="Ingrese nombre(s)">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCategory">Categoría</label>
+                                            <select class="k-modal-comments-select" style="width: 100%; height: 40px;" name="inputCategory" id="inputCategory">
+                                                <option value="" selected></option>
+                                                <option value="bugs">Bugs</option>
+                                                <option value="design">Diseño</option>
+                                                <option value="performance">Desempeño</option>
+                                                <option value="improvements">Mejoras</option>
+                                                <option value="other">Otro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputComment">Comentario</label>
+                                        <textarea class="k-modal-textarea" style="width: 100%;" name="" id="inputComment" cols="30" rows="10" placeholder="Ingrese comentario"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer k-modal-footer-background">
+                    <button type="button" class="k-modal-csc-button" data-dismiss="modal">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Aquí inicia el modal de sugerencias.-->
+    <div class="modal fade" id="suggestionsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog k-modal-color-text">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel"><i class="fas fa-smile-wink k-footer-icon"></i>Sugerencias</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body k-modal-body-background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="inputUserEmailSuggestions">Correo Electrónico</label>
+                                            <input class="form-control k-modal-comments-input" id="inputUserEmailSuggestions" type="text" name="inputUserEmailSuggestions" placeholder="Ingrese correo electrónico">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputUserNamesSuggestions">Nombre(s)</label>
+                                            <input class="form-control k-modal-comments-input" id="inputUserNamesSuggestions" type="text" name="inputUserNamesSuggestions" placeholder="Ingrese nombre(s)">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCategorySuggestions">Categoría</label>
+                                            <select style="width: 100%; height: 40px;" name="inputCategorySuggestions" id="inputCategorySuggestions">
+                                                <option value="" selected></option>
+                                                <option value="bugs">Bugs</option>
+                                                <option value="design">Diseño</option>
+                                                <option value="performance">Desempeño</option>
+                                                <option value="improvements">Mejoras</option>
+                                                <option value="other">Otro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputSuggestions">Sugerencias<label>
+                                        <textarea class="k-modal-textarea" style="width: 100%;" name="inputSuggestions" id="inputSuggestions" cols="30" rows="10" placeholder="Ingrese sugerencia"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer k-modal-footer-background">
+                    <button type="button" class="k-modal-csc-button" data-dismiss="modal">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Aquí inicia el modal de quejas.-->
+    <div class="modal fade" id="complaintsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog k-modal-color-text">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel"><i class="fas fa-angry k-footer-icon"></i>Quejas</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body k-modal-body-background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="inputUserEmailComplaints">Correo Electrónico</label>
+                                            <input class="form-control k-modal-comments-input" id="inputUserEmailComplaints" type="text" name="inputUserEmailComplaints" placeholder="Ingrese correo electrónico">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="inputComplaintsCategory">Categoría</label>
+                                            <select style="width: 100%; height: 40px;" name="inputComplaintsCategory" id="inputComplaintsCategory">
+                                                <option value="" selected></option>
+                                                <option value="bugs">Bugs</option>
+                                                <option value="design">Diseño</option>
+                                                <option value="performance">Desempeño</option>
+                                                <option value="improvements">Mejoras</option>
+                                                <option value="other">Otro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputComplaints">Queja</label>
+                                        <textarea class="k-modal-textarea" style="width: 100%;" name="inputComplaints" id="inputComplaints" cols="30" rows="10" placeholder="Ingrese queja"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer k-modal-footer-background">
+                    <button type="button" class="k-modal-csc-button" data-dismiss="modal">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Aquí inicia el modal de acerca de.-->
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel"><i class="fas fa-info-circle k-footer-icon"></i>Acerca de</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <p style="text-align: justify;">
+                                    Knowledge es una aplicación web creada en el Instituto Tecnológico de Milpa Alta II
+                                    para ayudar y facilitar a los estudiantes a aclarar sus dudas que se generen en clase y que aún con
+                                    ayuda del profesor no logre entender del todo bien algún tema en especifico o simplemente
+                                    porque quieran ampliar sus conocimientos, sin tener que sentirse frustrados al momento de buscar información en
+                                    otros lugares en los cuales no tienen nada que ver o la información esta desactualizada. 
+                                </p>
+                                <p style="text-align: justify;">
+                                    Con Knowledge se resuelve ese problema, ya que contiene información actualizada en archivos de vídeo o
+                                    archivos PDF de todas las materias que se imparten en el ITMA II, mediante una cuenta y con
+                                    elegir la carrera en la que estas, tendrás todo ésto disponible al alcance de tus manos.   
+                                </p>
+                                <p style="font-size: 24px; font-weight: bold; text-align: center;">!Así que no esperes más y empieza a usar Knowledge!</p>
+                                <img class="img-fluid" src="gm/img/happy.png" alt="" width="128px" height="128px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Aquí inicia el modal de contactar.-->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel"><i class="fas fa-address-card k-footer-icon"></i>Contactar</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div>
+                                    <label class="k-modal-contact-label" for=""><i class="fas fa-location-arrow k-modal-contact-icon"></i>Dirección: Av. Guerrero Sur 171, Pueblo de San Juan Tepenahuac, Milpa Alta, Ciudad de México, C.P. 12800.</label>
+                                    <label class="k-modal-contact-label" for=""><i class="fas fa-at k-modal-contact-icon"></i>Correo electrónico: knowledge@knowledge.com</label>
+                                    <label class="k-modal-contact-label" for=""><i class="fas fa-phone-alt k-modal-contact-icon"></i>Teléfono: (55) 5844 6824</label>
+                                    <label class="k-modal-contact-label" for=""><i class="fab fa-whatsapp k-modal-contact-icon"></i>WhatsApp: 5532982057</label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--Aquí inicia el modal de terminos.-->
+     <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel">Términos</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>1.- Al momento de crear una cuenta de Knowladge queda prohibido el uso de datos alterados.</p>
+                                <p>2.- Knowledge será responsable del tratamiento y uso de los datos personales que recabe.</p>
+                                <p>3.- Cada cuenta que es creada, el usuario se hace responsable por lo que pueda subir o comparti en dicha aplicación.</p>
+                                <p>4.- Cuando se detecte que una cuenta se le esta dando un uso incorrecto para lo cual esta creada será dada de baja y borrada inmediatamente.</p>
+                                <p>5.- Cuando una cuenta presente una inactividad prolongada ésta se dará de baja y su inmediata eliminación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--Aquí inicia modal de privacidad.-->
+     <div class="modal fade" id="privacityModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel">Privacidad</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <p style="text-align: justify;">
+                                    Tu información que nos brindes estará en total resguardo y confidencialidad, así que no tienes
+                                    porque preocupar sobre tus datos, deja todo en nuestras manos y disfruta de Knowledge. 
+                                </p>
+                                <img class="img-fluid k-modal-privacity-img" src="gm/img/lock.png" alt="" width="128px" height="128px">
+                                <img class="img-fluid k-modal-privacity-img" src="gm/img/password.png" alt="" width="128px" height="128px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper-1.16.0.js"></script>
+    <script src="bs/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+</body>
+</html>

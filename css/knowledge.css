@@ -1,0 +1,124 @@
+.k-menu-icon {
+    color: #FFFFFF;
+}
+.k-nav-link {
+    color: #FFFFFF;
+}
+.k-nav-dropMenu-link {
+    color: #FFFFFF;
+}
+.k-nav-dropMenu-link:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.k-nav-link:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.k-nav-link-icon {
+    margin-right: 10px;
+}
+.k-dropMenu {
+    background-color: #22272E;
+}
+.k-button-search {
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.k-input-search {
+    border: none;
+    border-radius: 50px;
+}
+.k-button-search:hover {
+    font-size: 20px;
+    font-weight: bold;
+}
+.k-modal-button-update-delete {
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.k-modal-button-update-delete:hover {
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.k-modal-padding-label {
+    padding-top: 20px;
+}
+.k-nav-margin-input {
+    margin-top: 20px;
+}
+
+.k-main-container-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+.k-carousel-container {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.k-card-container {
+    border-radius: 25px;
+    background-color: #22272E;
+    color: #FFFFFF;
+    height: 332px;
+    text-align: center;
+    width: 100%;
+}
+.k-card-description {
+    text-align: center;
+}
+.k-card-icon {
+    font-size: 50px;
+    padding: 25px;
+}
+.k-card-title {
+    font-size: 24;
+    font-weight: bold;
+}
+.k-card-button {
+    border-radius: 50px;
+    border-style: none;
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    color: #FFFFFF;
+    height: 32px;
+    width: 100px;
+}
+.k-card-button:hover {
+    background-color: #FFFFFF;
+    color: #22272E;
+    font-weight: bold;
+}
+.k-card-button:focus {
+    outline: none;
+}
+#k-card-indicator {
+    height: 5px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #22272E;
+}
+.k-section {
+    background-color: #FFFFFF;
+}
+@media (max-width: 767px) {
+    .k-card-bottom {
+        margin-bottom: 10px;
+    }
+    .k-card-container {
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+    .k-card-container {
+        height: auto;
+    }
+}

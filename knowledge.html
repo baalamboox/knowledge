@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Knowledge | Guillermo Jimenez</title>
+	<link rel="icon" type="image/png" href="gm/img/favicon.png">
+    <link rel="stylesheet" href="bs/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="fa/fontawesome-free-5.13.0-web/css/all.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/knowledge.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg sticky-top k-nav-bar">
+		<a class="navbar-brand" href="#"><i class="fas fa-kiwi-bird k-main-logo"></i></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="fas fa-bars k-menu-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item active">
+					<a class="nav-link k-nav-link" href="#"><i class="fas fa-chalkboard-teacher k-nav-link-icon"></i>Cursos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link k-nav-link" href="#"><i class="fas fa-comments k-nav-link-icon"></i>Chat</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle k-nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-address-card k-nav-link-icon"></i>Datos</a>
+					<div class="dropdown-menu k-dropMenu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item k-nav-dropMenu-link" href="#"><i class="fas fa-user k-nav-link-icon"></i>Personales</a>
+						<a class="dropdown-item k-nav-dropMenu-link" href="#"><i class="fas fa-graduation-cap k-nav-link-icon"></i>Académicos</a>
+						<a class="dropdown-item k-nav-dropMenu-link" href="#"><i class="fas fa-eye k-nav-link-icon"></i>Mostrar todo</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle k-nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-alt k-nav-link-icon"></i>Cuenta</a>
+					<div class="dropdown-menu k-dropMenu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item k-nav-dropMenu-link" href="#"><i class="fas fa-question-circle k-nav-link-icon"></i>Ayuda</a>
+						<a class="dropdown-item dropdown-toggle k-nav-dropMenu-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fas fa-cogs k-nav-link-icon"></i>Configuración</a>
+						<div  class="dropdown-menu k-dropMenu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item k-nav-dropMenu-link" href="#" data-toggle="modal" data-target="#update_account"><i class="fas fa-user-edit k-nav-link-icon"></i>Actualizar cuenta</a>
+							<a class="dropdown-item k-nav-dropMenu-link" href="#" data-toggle="modal" data-target="#delete_account"><i class="fas fa-trash-alt k-nav-link-icon"></i>Eliminar cuenta</a>
+						</div>
+						<a class="dropdown-item k-nav-dropMenu-link" href="#"><i class="fas fa-sign-out-alt k-nav-link-icon"></i>Cerrar sesión</a>
+					</div>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2 k-input-search" type="search" placeholder="Buscar">
+				<button class="my-2 my-sm-0 k-button-search" type="submit"><i class="fas fa-search"></i></button>
+			</form>
+		</div>
+	</nav>
+	<div class="container-fluid k-section">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="k-main-container-title">
+					<span>Tópicos Avanzados de Programación</span>
+				</div>
+				<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<ol class="carousel-indicators">
+							<li class="active" id="k-card-indicator" data-target="#carouselExampleIndicators1" data-slide-to="0"></li>
+							<li  id="k-card-indicator" data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+						  </ol>
+						<div class="carousel-item active">
+							<div class="container-fluid k-carousel-container">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">SASS y LESS</h5>
+												<p class="card-text k-card-description" style="text-align: justify;">Aprende a usar SASS y LESS</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">JQuery</h5>
+												<p class="card-text k-card-description">Aprender a utilizar éste framework para hacer muchas cosas, en poco tiempo.</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">HTML5</h5>
+												<p class="card-text k-card-description">Aprender el nuevo modelo de construcción de una página web.</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">CSS3</h5>
+												<p class="card-text k-card-description">Aprende a dar estilos de una forma super fácil.</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					  	</div>
+						<div class="carousel-item">
+							<div class="container-fluid k-carousel-container">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Bootstrap 4</h5>
+												<p class="card-text k-card-description">Empieza a maquetar tus modelos web muy fácilmente</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">JavaScript</h5>
+												<p class="card-text k-card-description">Empieza a realizar tus propios scripts en JS.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">PHP</h5>
+												<p class="card-text k-card-description">Escribe código para PHP.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Java</h5>
+												<p class="card-text k-card-description">Aprender cosas avanzadas sobre Java.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="k-main-container-title">
+					<span>Métodos Numéricos</span>
+				</div>
+				<div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<ol class="carousel-indicators">
+							<li class="active" id="k-card-indicator" data-target="#carouselExampleIndicators2" data-slide-to="0"></li>
+							<li  id="k-card-indicator" data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+						  </ol>
+						<div class="carousel-item active">
+							<div class="container-fluid k-carousel-container">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Método de Newton</h5>
+												<p class="card-text k-card-description" style="text-align: justify;">¿Sabes cómo usar el método de Newton?</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Método de Lagrange</h5>
+												<p class="card-text k-card-description">Aprende a usar el método de Lagrange.</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Método de la Secante</h5>
+												<p class="card-text k-card-description">Aprende a usar el método de la secante.</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Método de Simpson 3/8</h5>
+												<p class="card-text k-card-description">Aprender a usar éste método es de mucha ayuda.</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					  	</div>
+						<div class="carousel-item">
+							<div class="container-fluid k-carousel-container">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Error Relativo</h5>
+												<p class="card-text k-card-description">Aprende a calcular el error relativo.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Error Absoluto</h5>
+												<p class="card-text k-card-description">¿Sabes qué es el error absoluto?, si no es así pues adelante aprende.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Método de Intervalos</h5>
+												<p class="card-text k-card-description">Aprende a usar el método de Intervalos.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Método de Simpson 1/2</h5>
+												<p class="card-text k-card-description">Aprende a resolver problemas numéricos mediante éste método.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="k-main-container-title">
+					<span>Ecuaciones Diferenciales</span>
+				</div>
+				<div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<ol class="carousel-indicators">
+							<li class="active" id="k-card-indicator" data-target="#carouselExampleIndicators3" data-slide-to="0"></li>
+							<li  id="k-card-indicator" data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+						  </ol>
+						<div class="carousel-item active">
+							<div class="container-fluid k-carousel-container">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Sistemas de Ecuaciones Diferenciales</h5>
+												<p class="card-text k-card-description" style="text-align: justify;">Aprende a resolverlas de una manera sencilla.</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Estabilidad de una Ecuación</h5>
+												<p class="card-text k-card-description">Aprende la importancia del porque la estabilidad de una ecuación.</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Aplicaciones de Fourier</h5>
+												<p class="card-text k-card-description">Aprende en que partes se aplica Fourier.</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Ecuaciones de Primer Orden</h5>
+												<p class="card-text k-card-description">Entiende cómo resolver éste tipo de ecuaciones.</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					  	</div>
+						<div class="carousel-item">
+							<div class="container-fluid k-carousel-container">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Ecuaciones Diferenciales</h5>
+												<p class="card-text k-card-description">Aprende para que sirven las ecuaciones diferenciales.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Polinomio Característico</h5>
+												<p class="card-text k-card-description">Aprender cómo se resuelven los polinomios característicos.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Laplace</h5>
+												<p class="card-text k-card-description">Aprende cómo resolver problemas de Laplace.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Fourier</h5>
+												<p class="card-text k-card-description">Entiende cómo resolver series de Fourier.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="k-main-container-title">
+					<span>Taller de Base de Datos</span>
+				</div>
+				<div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<ol class="carousel-indicators">
+							<li class="active" id="k-card-indicator" data-target="#carouselExampleIndicators4" data-slide-to="0"></li>
+							<li  id="k-card-indicator" data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+						  </ol>
+						<div class="carousel-item active">
+							<div class="container-fluid k-carousel-container">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Modelo Relacional</h5>
+												<p class="card-text k-card-description" style="text-align: justify;">¿Sabes qué es el modelo relacional en una base de datos?</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Triggers MySQL</h5>
+												<p class="card-text k-card-description">Una manera muy sencilla de aprender a usar triggers y su funcionamiento.</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Funciones MySQL</h5>
+												<p class="card-text k-card-description">Aprende como crear funciones en MySQL de una forma sencilla.</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-photo-video k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Modelo E-R</h5>
+												<p class="card-text k-card-description">Aprende que es el modelo entidad-relación fácil y rápido.</p>
+												<button class="k-card-button">Ver</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					  	</div>
+						<div class="carousel-item">
+							<div class="container-fluid k-carousel-container">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">MySQL</h5>
+												<p class="card-text k-card-description">Conoce todo acerca del gestor de base de datos MySQL.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Consultas MySQL</h5>
+												<p class="card-text k-card-description">Aprende a realizar consultas, desde las más sencillas hasta más complejas.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Usuarios MySQL</h5>
+												<p class="card-text k-card-description">Crear usuario en una base de datos es importante, así que aprende cómo.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="card k-card-bottom k-card-container">
+											<i class="fas fa-file-pdf k-card-icon"></i>
+											<div class="card-body">
+												<h5 class="card-title k-card-title">Privilegios y Roles</h5>
+												<p class="card-text k-card-description">Aprende a dar privilegios y asignar roles a los usuarios en MySQL.</p>
+												<button class="k-card-button">Leer</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+        <div class="container-fluid">
+            <div class="row k-footer-row-link">
+                <div class="col-md-3">
+                    <p class="k-footer-title">Proyecto</p>
+                    <ul class="k-footer-list">
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="donate.html"><i class="fas fa-hand-holding-usd k-footer-icon"></i>Donar</a></li>
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="participate.html"><i class="fas fa-people-carry k-footer-icon"></i>Participar</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="k-footer-title">Seguir</p>
+                    <ul class="k-footer-list">
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="https://es-la.facebook.com/"><i class="fab fa-facebook k-footer-icon"></i>Facebook</a></li>
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram k-footer-icon"></i>Instagram</a></li>
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="https://twitter.com/login?lang=es"><i class="fab fa-twitter k-footer-icon"></i>Twitter</a></li>
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="https://www.youtube.com/?hl=es-419&gl=MX"><i class="fab fa-youtube k-footer-icon"></i>Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                     <p class="k-footer-title">Comunidad</p>
+                    <ul class="k-footer-list">
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#commentsModal"><i class="fas fa-comment k-footer-icon"></i>Comentarios</a></li>
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#suggestionsModal"><i class="fas fa-smile-wink k-footer-icon"></i>Sugerencias</a></li>
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#complaintsModal"><i class="fas fa-angry k-footer-icon"></i>Quejas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                     <p class="k-footer-title">Ayuda</p>
+                    <ul class="k-footer-list">
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#aboutModal"><i class="fas fa-info-circle k-footer-icon"></i>Acerca de</a></li>
+                        <li><a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#contactModal"><i class="fas fa-address-card k-footer-icon"></i>Contactar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row k-footer-row-info">
+                <div class="col-md-4 d-flex">
+                    <p>Hecho con mucho <i class="fas fa-heart"></i> en <i class="fas fa-home"></i>.</p>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <p>Creado y diseñado por Guillermo Jiménez.</p>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <p style="margin-right: 10px;">© JMG 2020.</p>
+                    <p><a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#termsModal">Términos</a> y <a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#privacityModal">Privacidad.</a></p>
+                </div>
+            </div>
+        </div>
+	</footer>
+	<!--Aquí inicia el modal de comentarios.-->
+	<div class="modal fade" id="commentsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog k-modal-color-text">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel"><i class="fas fa-comment k-footer-icon"></i>Comentarios</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body k-modal-body-background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="inputUserEmailComment">Correo Electrónico</label>
+                                            <input class="form-control k-modal-comments-input" id="inputUserEmailComment" type="text" name="inputUserEmailComment" placeholder="Ingrese correo electrónico">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputUserNamesComment">Nombre(s)</label>
+                                            <input class="form-control k-modal-comments-input" id="inputUserNamesComment" type="text" name="inputUserNamesComment" placeholder="Ingrese nombre(s)">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCategory">Categoría</label>
+                                            <select class="k-modal-comments-select" style="width: 100%; height: 40px;" name="inputCategory" id="inputCategory">
+                                                <option value="" selected></option>
+                                                <option value="bugs">Bugs</option>
+                                                <option value="design">Diseño</option>
+                                                <option value="performance">Desempeño</option>
+                                                <option value="improvements">Mejoras</option>
+                                                <option value="other">Otro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputComment">Comentario</label>
+                                        <textarea class="k-modal-textarea" style="width: 100%;" name="" id="inputComment" cols="30" rows="10" placeholder="Ingrese comentario"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer k-modal-footer-background">
+                    <button type="button" class="k-modal-csc-button" data-dismiss="modal">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Aquí inicia el modal de sugerencias.-->
+    <div class="modal fade" id="suggestionsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog k-modal-color-text">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel"><i class="fas fa-smile-wink k-footer-icon"></i>Sugerencias</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body k-modal-body-background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="inputUserEmailSuggestions">Correo Electrónico</label>
+                                            <input class="form-control k-modal-comments-input" id="inputUserEmailSuggestions" type="text" name="inputUserEmailSuggestions" placeholder="Ingrese correo electrónico">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputUserNamesSuggestions">Nombre(s)</label>
+                                            <input class="form-control k-modal-comments-input" id="inputUserNamesSuggestions" type="text" name="inputUserNamesSuggestions" placeholder="Ingrese nombre(s)">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCategorySuggestions">Categoría</label>
+                                            <select style="width: 100%; height: 40px;" name="inputCategorySuggestions" id="inputCategorySuggestions">
+                                                <option value="" selected></option>
+                                                <option value="bugs">Bugs</option>
+                                                <option value="design">Diseño</option>
+                                                <option value="performance">Desempeño</option>
+                                                <option value="improvements">Mejoras</option>
+                                                <option value="other">Otro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputSuggestions">Sugerencias<label>
+                                        <textarea class="k-modal-textarea" style="width: 100%;" name="inputSuggestions" id="inputSuggestions" cols="30" rows="10" placeholder="Ingrese sugerencia"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer k-modal-footer-background">
+                    <button type="button" class="k-modal-csc-button" data-dismiss="modal">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Aquí inicia el modal de quejas.-->
+    <div class="modal fade" id="complaintsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog k-modal-color-text">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel"><i class="fas fa-angry k-footer-icon"></i>Quejas</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body k-modal-body-background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="inputUserEmailComplaints">Correo Electrónico</label>
+                                            <input class="form-control k-modal-comments-input" id="inputUserEmailComplaints" type="text" name="inputUserEmailComplaints" placeholder="Ingrese correo electrónico">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="inputComplaintsCategory">Categoría</label>
+                                            <select style="width: 100%; height: 40px;" name="inputComplaintsCategory" id="inputComplaintsCategory">
+                                                <option value="" selected></option>
+                                                <option value="bugs">Bugs</option>
+                                                <option value="design">Diseño</option>
+                                                <option value="performance">Desempeño</option>
+                                                <option value="improvements">Mejoras</option>
+                                                <option value="other">Otro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputComplaints">Queja</label>
+                                        <textarea class="k-modal-textarea" style="width: 100%;" name="inputComplaints" id="inputComplaints" cols="30" rows="10" placeholder="Ingrese queja"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer k-modal-footer-background">
+                    <button type="button" class="k-modal-csc-button" data-dismiss="modal">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Aquí inicia el modal de acerca de.-->
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel"><i class="fas fa-info-circle k-footer-icon"></i>Acerca de</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <p style="text-align: justify;">
+                                    Knowledge es una aplicación web creada en el Instituto Tecnológico de Milpa Alta II
+                                    para ayudar y facilitar a los estudiantes a aclarar sus dudas que se generen en clase y que aún con
+                                    ayuda del profesor no logre entender del todo bien algún tema en especifico o simplemente
+                                    porque quieran ampliar sus conocimientos, sin tener que sentirse frustrados al momento buscar información en
+                                    otros lugares en los cuales no tienen nada que ver o la información esta desactualizada. 
+                                </p>
+                                <p style="text-align: justify;">
+                                    Con Knowledge se resuelve ese problema, ya que contiene información actualizada en archivos de vídeo o
+                                    archivos PDF de todas las materias de las carreras que imparte en el ITMA II, mediante una cuenta y con
+                                    elegir la carrera en la que estas, tendrás todo ésto disponible al alcance de tus manos.   
+                                </p>
+                                <p style="font-size: 24px; font-weight: bold; text-align: center;">!Así que no esperes más y empieza a usar Knowledge!</p>
+                                <img class="img-fluid" src="gm/img/happy.png" alt="" width="128px" height="128px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Aquí inicia el modal de contactar.-->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel"><i class="fas fa-address-card k-footer-icon"></i>Contactar</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div>
+                                    <label class="k-modal-contact-label" for=""><i class="fas fa-location-arrow k-modal-contact-icon"></i>Dirección: Av. Guerrero Sur 171, Pueblo de San Juan Tepenahuac, Milpa Alta, Ciudad de México, C.P. 12800.</label>
+                                    <label class="k-modal-contact-label" for=""><i class="fas fa-at k-modal-contact-icon"></i>Correo electrónico: knowledge@knowledge.com</label>
+                                    <label class="k-modal-contact-label" for=""><i class="fas fa-phone-alt k-modal-contact-icon"></i>Teléfono: (55) 5844 6824</label>
+                                    <label class="k-modal-contact-label" for=""><i class="fab fa-whatsapp k-modal-contact-icon"></i>WhatsApp: 5532982057</label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--Aquí inicia el modal de terminos.-->
+     <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel">Términos</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>1.- Al momento de crear una cuenta de Knowladge queda prohibido el uso de datos alterados.</p>
+                                <p>2.- Knowledge será responsable del tratamiento y uso de los datos personales que recabe.</p>
+                                <p>3.- Cada cuenta que es creada, el usuario se hace responsable por lo que pueda subir o comparti en dicha aplicación.</p>
+                                <p>4.- Cuando se detecte que una cuenta se le esta dando un uso incorrecto para lo cual esta creada será dada de baja y borrada inmediatamente.</p>
+                                <p>5.- Cuando una cuenta presente una inactividad prolongada ésta se dará de baja y su inmediata eliminación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--Aquí inicia modal de privacidad.-->
+     <div class="modal fade" id="privacityModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel">Privacidad</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <p style="text-align: justify;">
+                                    Tu información que nos brindes estará en total resguardo y confidencialidad, así que no tienes
+                                    porque preocupar sobre tus datos, deja todo en nuestras manos y disfruta de Knowledge. 
+                                </p>
+                                <img class="img-fluid k-modal-privacity-img" src="gm/img/lock.png" alt="" width="128px" height="128px">
+                                <img class="img-fluid k-modal-privacity-img" src="gm/img/password.png" alt="" width="128px" height="128px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="js/main.js"></script>
+	<script src="js/knowledge.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper-1.16.0.js"></script>
+    <script src="bs/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+</body>
+</html>

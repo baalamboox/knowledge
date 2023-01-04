@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participar</title>
+    <link rel="icon" type="image/png" href="gm/img/favicon.png">
+    <link rel="stylesheet" href="bs/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="fa/fontawesome-free-5.13.0-web/css/all.css">
+	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/knowledge.css">
+    <link rel="stylesheet" href="css/participate.css">
+</head>
+<body>
+    <!--Aquí inicia la barra donde se encuentra el logo, título y botón ingresar.-->
+    <nav class="navbar navbar-expand-lg sticky-top k-nav-bar">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-kiwi-bird k-main-logo"></i>
+            <span class="k-main-title">Knowledge</span>
+        </a>
+        <button class="navbar-toggler k-navbar-button" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <div class="navbar-nav mr-auto mt-2 mt-lg-0"></div>
+            <div class="my-2 my-lg-0" style="text-align: center;">
+                <button class="k-login-button" type="button" data-toggle="modal" data-target="#loginModal">Ingresar</button>
+            </div>
+        </div>
+    </nav>
+    <!--Aquí inicia el contenido.-->
+    <div class="container-fluid k-main-container">
+        <div class="row">
+            <div class="col-md-12 services-section">
+                <div class="k-background-opaque">
+                <div class="inner-width">
+                    <h1 class="section-title">Participa en Knowledge</h1>
+                    <div class="border"></div>
+                    <div class="services-container">
+                        <div class="service-box">
+                            <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
+                            <div class="service-title">Diseñador Web</div>
+                            <div class="service-desc">
+                                Si eres bueno para el diseño web, y quieres dar a conocer un poquito de ti, únete a Knowledge.
+                            </div>
+                        </div>
+                        <div class="service-box">
+                            <div class="service-icon"><i class="fas fa-code"></i></div>
+                            <div class="service-title">Desarrollo Web</div>
+                            <div class="service-desc">
+                                Si sabes dominar alguna tecnología que ayude al desarro de Knowledge tienes las puertas abiertas.
+                            </div>
+                        </div>
+                        <div class="service-box">
+                            <div class="service-icon"><i class="fas fa-crop"></i></div>
+                            <div class="service-title">Diseños Responsivos</div>
+                            <div class="service-desc">
+                                Para Knowledge es importante adaptarse a cualquier tipo de dispositivo, si eres bueno en ello, adelante.
+                            </div>
+                        </div>
+                        <div class="service-box">
+                            <div class="service-icon"><i class="fas fa-object-ungroup"></i></div>
+                            <div class="service-title">Edición de Secciones</div>
+                            <div class="service-desc">
+                                Adaptar y posicionar el contenido de Knowledge es de suma importancia, si eres bueno en ello Knowledge te espera.
+                            </div>
+                        </div>
+                        <div class="service-box">
+                            <div class="service-icon"><i class="fas fa-coins"></i></div>
+                            <div class="service-title">Base de Datos</div>
+                            <div class="service-desc">
+                                Las bases de datos son importantes, y para Knowledge no son lo de menos, si eres una persona excelente en esto, no pierdas tu oportunidad.
+                            </div>
+                        </div>
+                        <div class="service-box">
+                            <div class="service-icon"><i class="fas fa-cubes"></i></div>
+                            <div class="service-title">Analista de Datos</div>
+                            <div class="service-desc">
+                                Si lo tuyo es el análisis de datos, Knowledge tiene un lugar para ti.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Aquí inicia el pie de página.-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row k-footer-row-info">
+                <div class="col-md-4 d-flex">
+                    <p>Hecho con mucho <i class="fas fa-heart"></i> en <i class="fas fa-home"></i>.</p>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <p>Creado y diseñado por Guillermo Jiménez.</p>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <p style="margin-right: 10px;">© JMG 2020.</p>
+                    <p><a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#termsModal">Términos</a> y <a class="k-footer-link k-footer-hover-link k-link"  href="#" data-toggle="modal" data-target="#privacityModal">Privacidad.</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Aquí inicia el modal de iniciar sesión.-->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog k-modal-color-text">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel">Iniciar Sesión</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body k-modal-body-background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="login.php" method="post">
+                                    <div class="k-modal-user-icon-centered">
+                                        <i class="fas fa-user k-modal-user-icon"></i>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="userEmail"><i class="fas fa-at k-modal-margin-icon"></i>Correo Electrónico:</label>
+                                        <input class="form-control k-modal-input" id="userEmail" type="email" name="userEmail" placeholder="Ingrese correo electrónico">
+                                        <label for="userPassword"><i class="fas fa-key k-modal-margin-icon k-modal-margin-label"></i>Contraseña:</label>
+                                        <input class="form-control k-modal-input" id="userPassword" type="password" name="userPassword" placeholder="Ingrese contraseña">
+                                    </div>
+                                    <button class="k-modal-login-button" type="submit">Iniciar Sesión</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer k-modal-footer-background">
+                    <a class="k-modal-link k-link" href="index.html">¿No tiene una cuenta?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Aquí inicia el modal de terminos.-->
+    <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel">Términos</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>1.- Al momento de crear una cuenta de Knowladge queda prohibido el uso de datos alterados.</p>
+                                <p>2.- Knowledge será responsable del tratamiento y uso de los datos personales que recabe.</p>
+                                <p>3.- Cada cuenta que es creada, el usuario se hace responsable por lo que pueda subir o comparti en dicha aplicación.</p>
+                                <p>4.- Cuando se detecte que una cuenta se le esta dando un uso incorrecto para lo cual esta creada será dada de baja y borrada inmediatamente.</p>
+                                <p>5.- Cuando una cuenta presente una inactividad prolongada ésta se dará de baja y su inmediata eliminación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Aquí inicia modal de privacidad.-->
+    <div class="modal fade" id="privacityModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header k-modal-header-background">
+                    <h5 class="modal-title k-modal-header-title" id="exampleModalLabel">Privacidad</h5>
+                    <button type="button" class="close k-modal-close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <p style="text-align: justify;">
+                                    Tu información que nos brindes estará en total resguardo y confidencialidad, así que no tienes
+                                    porque preocupar sobre tus datos, deja todo en nuestras manos y disfruta de Knowledge. 
+                                </p>
+                                <img class="img-fluid k-modal-privacity-img" src="gm/img/lock.png" alt="" width="128px" height="128px">
+                                <img class="img-fluid k-modal-privacity-img" src="gm/img/password.png" alt="" width="128px" height="128px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+	<script src="js/knowledge.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper-1.16.0.js"></script>
+    <script src="bs/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+</body>
+</html>
